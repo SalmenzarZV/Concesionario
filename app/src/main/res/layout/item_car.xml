@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvAddTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCarPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/carpreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddTitle"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivLocationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/location_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddTitle"
+        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+    <TextView
+        android:id="@+id/tvAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/location"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLocationIcon"
+        app:layout_constraintStart_toEndOf="@+id/ivLocationIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivLocationIcon" />
+
+    <TextView
+        android:id="@+id/tvAddDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/description"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAddPrice"
+        app:layout_constraintEnd_toStartOf="@+id/ivCarPreview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddLocation" />
+
+    <TextView
+        android:id="@+id/tvAddPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/price"
+        app:layout_constraintEnd_toEndOf="@+id/ivCarPreview"
+        app:layout_constraintStart_toStartOf="@+id/ivCarPreview"
+        app:layout_constraintTop_toBottomOf="@+id/ivCarPreview" />
+
+    <TextView
+        android:id="@+id/tvAddPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cv"
+        app:layout_constraintEnd_toStartOf="@+id/tvAddShift"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvAddDoors"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddFuel" />
+
+    <TextView
+        android:id="@+id/tvAddDoors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/doors"
+        app:layout_constraintEnd_toStartOf="@+id/tvAddPower"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddYear" />
+
+    <TextView
+        android:id="@+id/tvAddFuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/fuel"
+        app:layout_constraintEnd_toStartOf="@+id/tvAddColor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvAddKms"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddDescription" />
+
+    <TextView
+        android:id="@+id/tvAddKms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/kms"
+        app:layout_constraintEnd_toStartOf="@+id/tvAddFuel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvAddYear"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddDescription" />
+
+    <TextView
+        android:id="@+id/tvAddYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/year"
+        app:layout_constraintEnd_toStartOf="@+id/tvAddKms"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddDescription" />
+
+    <TextView
+        android:id="@+id/tvAddShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/shift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvAddPower"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddColor" />
+
+    <TextView
+        android:id="@+id/tvAddColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvAddFuel"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

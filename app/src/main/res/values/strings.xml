@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">DefinitiveConcesionario</string>
+    <string name="price">price</string>
+    <string name="description">description</string>
+    <string name="location">location</string>
+    <string name="year">year</string>
+    <string name="kms">kms</string>
+    <string name="fuel">fuel</string>
+    <string name="doors">doors</string>
+    <string name="cv">cv</string>
+    <string name="shift">shift</string>
+    <string name="carpreview">CarPreview</string>
+    <string name="title">title</string>
+    <string name="location_logo">Location Logo</string>
+    <string name="backImg"><![CDATA[<]]></string>
+    <string name="nextImg"><![CDATA[>]]></string>
+    <string name="bar">/</string>
+    <string name="color">color</string>
+    <string name="ref">ref:</string>
+    <string name="buy">buy</string>
+    <string name="go_back">go back</string>
+    <string name="info">Info</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="app_realizada_por_sergio_almenzar_jim_nez">App realizada por: Sergio Almenzar Jiménez</string>
+    <string name="pmdm_2_dam">PMDM 2º DAM</string>
+    <string name="title_activity_car">CarActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
